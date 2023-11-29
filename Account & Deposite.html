@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <style>
+    /* Custom CSS for the menu bar */
+    .navbar-custom {
+      background-color: #003366;
+    }
+    .navbar-custom .navbar-brand {
+      color: #ffffff;
+      font-weight: bold;
+      font-size: 30px;
+    }
+    .navbar-custom .navbar-nav .nav-link {
+      color: #ffffff;
+      font-weight: bold;
+      font-size: 20px;
+    }
+    .navbar-custom .navbar-nav .nav-link:hover,
+    .navbar-custom .navbar-nav .nav-link:focus {
+      color: #ba0c0c;
+    }
+    .navbar-custom .navbar-nav .dropdown-menu {
+      background-color: #003366;
+    }
+    .navbar-custom .navbar-nav .dropdown-item {
+      color: khaki;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .navbar-custom .navbar-nav .dropdown-item:hover,
+    .navbar-custom .navbar-nav .dropdown-item:focus {
+      color: #669717;
+      background-color: #002c52;
+    }
+    .navbar-custom .navbar-brand img {
+      max-height: 50px;
+      margin-right:35px;
+    }
+
+    /* Show dropdown on hover */
+    .navbar-custom .nav-item.dropdown:hover .dropdown-menu {
+      display: block;
+    }
+/* Full-screen background image */
+body {
+      background-image: url('Img/4044532.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+
+    .form-container {
+      background-color: rgba(218, 218, 218, 0.874);
+      border: none;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 50px;
+      font-size: 14px;
+    }
+
+    /* Enlarge form fields and submit button */
+    .form-container input[type="text"],
+    .form-container input[type="email"],
+    .form-container input[type="password"],
+    .form-container select {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+    }
+
+    .form-container button[type="submit"] {
+      width: 100%;
+      padding: 15px;
+      font-size: 16px;
+      border-radius: 15px;
+      border: 4px;
+      background-color: #28a745;
+      color: #fff;
+      cursor: pointer;
+    }
+
+  </style>
+  <title>Menu Bar Example</title>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="Img/fg (1).jpg" alt="Logo" class="rounded-circle" href="index.html">
+        PIGGY BANK
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="Account & Deposite.html">ACCOUNTS & DEPOSITS</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              INVESTING
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+              <li><a class="dropdown-item" href="#">Stocks</a></li> 
+              <li><a class="dropdown-item" href="#">Bonds</a></li>
+              <li><a class="dropdown-item" href="#">Fixed Income</a></li>
+              <li><a class="dropdown-item" href="#">Marketing</a></li>
+              <li><a class="dropdown-item" href="#">Mutual Funds</a></li>
+              <li><a class="dropdown-item" href="#">ETFs</a></li>
+              <li><a class="dropdown-item" href="#">Options</a></li>
+              <li><a class="dropdown-item" href="#">(401K)</a></li>
+              <li><a class="dropdown-item" href="#">Roth IRA</a></li>
+              <li><a class="dropdown-item" href="#">Fundamental Analysis</a></li>
+              <li><a class="dropdown-item" href="#">Technical Analysis</a></li>
+              <li><a class="dropdown-item" href="#">Markets</a></li>
+              <li><a class="dropdown-item" href="#">VIEW ALL</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">LOG IN</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="Contct Us.html" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              CONTACT US
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+              <li><a class="dropdown-item" href="Contct Us.html">Phone: 09898090540</a></li>
+              <li><a class="dropdown-item" href="Contct Us.html">Email: shovon****@gmail.com</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 col-md-10">
+        <div class="form-container">
+          <h3>Register</h3>
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" class="form-control" id="password" placeholder="Enter your password">
+            </div>
+            <div class="mb-3">
+              <label for="accounts" class="form-label">Accounts</label>
+              <select class="form-select" id="accounts">
+                <option selected>Select account type</option>
+                <option value="savings">Savings</option>
+                <option value="checking">Checking</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="deposits" class="form-label">Deposits</label>
+              <select class="form-select" id="deposits">
+                <option selected>Select deposit type</option>
+                <option value="fixed">Fixed Deposit</option>
+                <option value="recurring">Recurring Deposit</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary float-end">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<!-- Team head section -->
+
+<div class="container-fluid" style="background-color: #d9d9d9;">
+  <div class="container">
+
+      <div class="row text-center">
+          <h2>Our Founder</h2><br>
+      </div>
+
+      <div class="row">
+
+          <div class="col-sm-4 text-center">
+              <br><br><img class="img-circle" src="Img/cxv.jpg" width="70%">
+              <h2>MR.TOM</h2>
+              <p><b>Managing Director</b></p>
+
+          </div>
+
+          <div class="col-sm-4 text-center">
+              <br><br><img class="img-circle" src="Img/fg (3).jpg" width="90%">
+              <h2>TOM AND JURRY</h2>
+              <p><b>CEO,Founder</b></p>
+
+          </div>
+
+
+          <div class="col-sm-4 text-center">
+              <img class="img-circle" src="Img/fg (2).jpg" width="60%">
+              <h2>MR.jerry</h2>
+              <p><b>Managing Director</b></p>
+
+          </div>
+
+      </div>
+
+  </div>
+
+</div>
+
+
+<!-- Footer section -->
+
+<footer class="container-fluid" style="background-color: #2e2e6d; padding: 50px; color: rgb(255, 255, 255);">
+
+  <div class="container">
+
+      <div class="row">
+
+          <div class="col-sm-4">
+              <h4>Address</h4>
+              <p><span class="glyphicon glyphicon-globe"></span> Tom and Jerry<br><span class="glyphicon glyphicon-map-marker"></span> Office:Nowhere 784/43,
+                  <sapn class="glyphicon glyphicon-phone-alt"></sapn> Hotline: 0987765533(24/7)
+              </p>
+
+          </div>
+
+
+          <div class="col-sm-8">
+
+              <div>
+                  <img src="Img/OIP.jpg" width="10%">
+                  <br><br><br>
+              </div>
+
+              <form class="form-horizontal" action="#">
+
+                  <div class="form-group">
+
+              
+
+                      </div>
+
+                    
+
+                      </div>
+
+                  </div>
+
+              </form>
+
+
+          </div>
+
+      </div>
+
+  </div>
+
+</footer>
+
+
+<!-- Copyright section -->
+
+<div class="container-fluid" style="background-color: #1a1a1a; padding: 20px; color: white; font-size: 20px;">
+
+  <div class="row">
+      <div class="col-sm-12 text-center">
+          <a href="#myPage"><span class="glyphicon glyphicon-chevron-up"></span></a>
+
+      </div>
+
+  </div>
+  <div class="row">
+      <div class="col-sm-12 text-center">
+
+          <p>&copy;WORLD BANK</p>
+
+      </div>
+
+  </div>
+
+</div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
